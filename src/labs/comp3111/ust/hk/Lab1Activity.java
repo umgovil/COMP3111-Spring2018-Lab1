@@ -9,7 +9,24 @@ public class Lab1Activity {
 			sum+=arr[i];
 		}
 		
-		System.out.println(String.format("The sum of the numbers is %d", sum));
+		int minVal=arr[0];
+		for(int i=1;i<arr.length;i++){ 
+		      if(arr[i] < minVal){ 
+		    	  	minVal = arr[i]; 
+		      } 
+		}
+		
+		int maxVal=arr[0];
+		for(int i=1;i<arr.length;i++){ 
+		      if(arr[i] > maxVal){ 
+		    	  	maxVal = arr[i]; 
+		      } 
+		}
+		
+		
+		System.out.println("The sum of the numbers is " + sum);
+		System.out.println("Min = " + minVal);
+		System.out.println("Max = " + maxVal);
 	}
 
 }
